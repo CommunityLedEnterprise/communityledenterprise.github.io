@@ -1,0 +1,25 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Community-led Enterprise Development Network"
+
+[params]
+footertext = "© CLE Network 2020 all rights reserved"
+footersubtext = "Powered by hugo & tachyons | Made with ♥︎ by Qulture"
+
+
+[menu]
+
+[[menu.main]]
+name = "Who/Why"
+url = "/process/"
+weight = 1
+
+[[menu.main]]
+name = "Network"
+url = "/resources/"
+weight = 2
+
+[[menu.main]]
+name = "Contact"
+url = "/contact/"
+weight = 3

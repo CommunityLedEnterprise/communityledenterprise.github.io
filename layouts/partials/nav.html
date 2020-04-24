@@ -1,0 +1,12 @@
+<nav class="flex justify-between items-center pa2 pa4-ns">
+    <div>
+        <a class="dim link white f7 fw6 ttu f4-ns db-ns dn" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+        <a class="dim link white f7 fw6 ttu f4-ns dn-ns db" href="{{ .Site.BaseURL }}">CLE Network</a>
+    </div>
+
+    <div>
+        {{ range .Site.Menus.main }} 
+            <a class="f7 ttu fw4 dim link white f4-l f4-m mh2 pa3-ns" href="{{ .URL }}">{{ .Name }}</a> 
+        {{ end }}
+    </div>
+</nav>

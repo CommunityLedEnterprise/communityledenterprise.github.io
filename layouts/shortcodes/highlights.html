@@ -1,0 +1,9 @@
+{{ if .Get "title"}}
+<div class="pa3">
+    <h1 class="fw7 f3 f2-ns ttc"> {{ .Get "title" }}</h1>
+    <h1 class="fw2 f4 f3-ns ttc"> {{ .Get "summary" }}</h1>
+    {{ if .Inner }}
+    <p class=" f5 f4-ns i black-70 measure center">{{ .Inner }}</p>
+    {{ end }}
+</div>
+{{end}}

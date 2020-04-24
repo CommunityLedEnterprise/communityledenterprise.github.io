@@ -1,0 +1,14 @@
+{{ define "main" }}
+{{ $sections := split .Content "+++" }}
+    <div class="mt5-l m3-m mt3 mt4-m">
+        {{ index $sections 0 | safeHTML }}
+    </div>
+
+    <div class="flex flex-column">
+        <div class="w-50-l w-100-m center">
+            <img src="{{ .Params.resource_image | absURL }}" alt="Network map of NZ">
+        </div>
+
+        {{ index $sections 1 | safeHTML }}
+    </div>
+{{ end }}

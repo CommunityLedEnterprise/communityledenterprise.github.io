@@ -1,0 +1,34 @@
+{{ define "main" }}
+{{ $sections := split .Content "+++" }}
+
+<div class="pa5-ns pa3 lh-copy-ns">
+    <h1 class="f2-l f4-m f6 fw6 measure center-ns tl-ns tc-ns w-50-ns ttc">{{ .Summary }}</h1>
+    
+    <div class="w-70-ns mt4 mv0-ns center">
+        {{ index $sections 0 | safeHTML }}
+    </div>
+
+    <hr class="w-30">
+
+    <div class="highlights2 tl center pa4 fw3 fw4-ns w-50-ns lh-copy-ns ph2-ns">
+        {{ index $sections 1 | safeHTML }}
+    </div>
+    
+    <hr class="w-30">
+
+    <div class="highlights2 tl center pa4 fw3 fw4-ns w-50-ns lh-copy-ns ph2-ns">
+        {{ index $sections 2 | safeHTML }}
+    </div>
+
+    <hr class="w-30">
+
+    <div class="highlights2 tl center pa4 fw3 fw4-ns w-50-ns lh-copy-ns ph2-ns">
+        {{ index $sections 3 | safeHTML }}
+    </div>
+
+    <hr class="w-30">
+
+    <div class="highlights2 tl center pa4 fw3 fw4-ns w-50-ns lh-copy-ns ph2-ns">
+        {{ index $sections 4 | safeHTML }}
+    </div>
+{{ end }}
